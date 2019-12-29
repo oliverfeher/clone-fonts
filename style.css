@@ -1,0 +1,54 @@
+/* Base reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+/* End base reset*/
+
+/* Nav bar*/
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    border-bottom: 2px solid gray;
+}
+#actual-nav {
+    display: flex;
+    flex-direction: flex-end;
+}
+.nav-list {
+    padding: 20px;
+}
+.nav-link{
+    margin-right: 15px;
+    color: gray;
+    cursor: pointer;
+    font-family: 'Rakkas', cursive;
+}
+.push {
+    margin-right: auto;
+}
+#page-title {
+    color: gray;
+    font-family: 'Rakkas', cursive;
+}
+/* End nav bar*/
+
+/* Enginge bar*/
+input {
+    margin-left: 10px;
+    border: 0;
+}
+#engine-bar {
+    margin-top: 20px;
+}
+#bar-container {
+    border: 2px gray solid;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+}
