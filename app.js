@@ -12,17 +12,23 @@ darkLight.onclick = function() {
     var img = reset.src;
     if (img.indexOf('images/rotating-arrows-circle.svg')!=-1) {
         reset.src  = 'images/rotating-arrows-circle2.svg';
-    }
-     else {
+    } else {
        reset.src = 'images/rotating-arrows-circle.svg';
      }
 
      var img2 = layout.src;
     if (img2.indexOf('images/grid.svg')!=-1) {
         layout.src  = 'images/grid2.svg';
-    }
-     else {
+    } else {
        layout.src = 'images/grid.svg';
-     }
+    }
 }
 
+layout.onclick = function() {
+    var img = layout.src;
+    if(img.indexOf("images/grid.svg")!=-1) {
+        layout.src = "images/rows.svg";
+    } else {
+        layout.src = "images/grid.svg";
+    }
+}
