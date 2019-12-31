@@ -149,3 +149,24 @@ input {
 #reset-button:hover {
     cursor: pointer;
 }
+
+/* Grid section*/
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 40px;
+}
+
+.grid-tile {
+    border-top: 1px solid black;
+    margin-right: 20px;
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.sizing {
+    width: 20px;
+    height: 20px;
+    align-self: flex-end;
+}
