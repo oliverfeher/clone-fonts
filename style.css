@@ -94,18 +94,21 @@ body {
     padding: 20px;
 }
 .nav-link{
+    font-size: 1.2rem;
     margin-right: 15px;
     cursor: pointer;
-    font-family: 'Rakkas', cursive;
+    font-family: 'Anton', sans-serif;
 }
 .nav-link:hover {
     text-decoration: underline;
+    color: red;
 }
 .push {
     margin-right: auto;
 }
 #page-title {
-    font-family: 'Rakkas', cursive;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.4rem;
 }
 /* End nav bar*/
 
@@ -160,13 +163,63 @@ input {
 
 .grid-tile {
     border-top: 1px solid black;
+    margin-bottom: 20px;
     margin-right: 20px;
-    padding: 80px 30px;
+    padding: ;
     display: flex;
     flex-direction: column;
 }
 .sizing {
+    margin-top: 15px;
     width: 20px;
     height: 20px;
     align-self: flex-end;
+    position: relative;
+    top: 15px;
+    right: 15px;
+    filter: sepia() saturate(10000%) hue-rotate(100deg)
+}
+#font-name1 {
+    font-family: 'Pacifico', cursive;
+}
+#font-name2 {
+    font-family: 'Lobster', cursive;
+}
+#font-name3 {
+    font-family: 'Shadows Into Light', cursive;
+}
+#font-name4 {
+    font-family: 'Comfortaa', cursive;
+}
+#font-name5 {
+    font-family: 'Amatic SC', cursive;
+}
+#font-name6 {
+    font-family: 'Permanent Marker', cursive;
+}
+#font-name7 {
+    font-family: 'Cinzel', serif;
+}
+#font-name8 {
+    font-family: 'Courgette', cursive;
+}
+.tile-title {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    text-align: center;
+}
+.font-author {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+.font-creator {
+    margin-left: 10px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+.footer-container {
+    display: flex;
 }
