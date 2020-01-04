@@ -13,6 +13,8 @@ ul {
 body {
     background-color: white;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 .dark-mode {
     background-color: black;
@@ -84,7 +86,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 30px;
-    border-bottom: 2px solid ;
+    border-bottom: 2px solid black;
 }
 #actual-nav {
     display: flex;
@@ -94,7 +96,7 @@ body {
     padding: 20px;
 }
 .nav-link{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-right: 15px;
     cursor: pointer;
     font-family: 'Anton', sans-serif;
@@ -108,7 +110,7 @@ body {
 }
 #page-title {
     font-family: 'Anton', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 /* End nav bar*/
 
@@ -161,8 +163,9 @@ input {
     margin: 40px;
 }
 
-.grid-tile {
+#grid-container > div {
     border-top: 1px solid black;
+    padding-bottom: 40px;
     margin-bottom: 20px;
     margin-right: 20px;
     padding: ;
@@ -177,7 +180,6 @@ input {
     position: relative;
     top: 15px;
     right: 15px;
-    filter: sepia() saturate(10000%) hue-rotate(100deg)
 }
 #font-name1 {
     font-family: 'Pacifico', cursive;
@@ -220,6 +222,21 @@ input {
     font-style: italic;
     font-size: 0.9rem;
 }
-.footer-container {
+footer div {
+    border-top: 2px solid black;
     display: flex;
+    justify-self: flex-end;
+    flex-direction: row;
+}
+#footer-container p {
+    padding: 10px;
+    margin: auto;
+    font-family: 'Anton', sans-serif;
+    font-size: 0.8rem;
+}
+.footer-border {
+    border-top: 2px solid white;
+}
+.white-border {
+    border-top: 1px solid white;
 }

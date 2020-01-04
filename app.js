@@ -5,10 +5,13 @@ let reset = document.getElementById("reset-button");
 let layout = document.getElementById("layout-toggle");
 let layout2 = "images/grid2.svg"
 let customTextBar = document.getElementById("custom-text");
-
+let footerBorder = document.getElementById("footer-container");
+let tileBorder = document.getElementsByTagName("border");
+console.log(tileBorder)
 
 darkLight.onclick = function() {
     element.classList.toggle("dark-mode");
+    footerBorder.classList.toggle("footer-border");
 
     let img = reset.src;
     if (img.indexOf('images/rotating-arrows-circle.svg')!=-1) {
