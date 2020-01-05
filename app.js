@@ -48,6 +48,16 @@ function showMsg() {
     }
 }
 
+reset.onclick = function() {
+    let defaultText = "Default text..";
+    customTextBar.value = defaultText;
+    if(customTextBar.value === defaultText) {
+        for(let i = 0; i < titleArr.length; i++) {
+            titleArr[i].innerHTML = defaultText;
+        }
+    }
+    
+}
 
 
 
