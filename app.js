@@ -6,8 +6,13 @@ let layout = document.getElementById("layout-toggle");
 let layout2 = "images/grid2.svg"
 let customTextBar = document.getElementById("custom-text");
 let footerBorder = document.getElementById("footer-container");
-let tileBorder = document.getElementsByTagName("border");
-console.log(tileBorder)
+
+let tileBorder = document.getElementsByClassName("border");
+let tileBorderArr = Array.from(tileBorder);
+
+let titleArr = document.getElementsByClassName("tile-title");
+let tileArr = Array.from(titleArr);
+
 
 darkLight.onclick = function() {
     element.classList.toggle("dark-mode");
@@ -27,13 +32,12 @@ darkLight.onclick = function() {
        layout.src = 'images/grid.svg';
     }
 
-    for(i = 0; i < addIcon.legth; i++) {
-        img3[i] = "images/add-button.svg"
-    };
+    for(let i = 0; i < tileBorderArr.length; i++) {
+        tileBorderArr[i].classList.toggle("white-border");
+        tileBorderArr[i].classList.toggle("black-border");
+    }
 };
 
-let titleArr = document.getElementsByClassName("tile-title");
-let tileArr = Array.from(titleArr);
 
 
 
