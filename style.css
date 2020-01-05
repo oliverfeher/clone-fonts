@@ -112,6 +112,12 @@ body {
     font-family: 'Anton', sans-serif;
     font-size: 1.1rem;
 }
+#reset-button {
+    border-radius: 30px;;
+}
+#reset-button:hover {
+    transform: rotate(50deg);
+}
 /* End nav bar*/
 
 /* Enginge bar*/
@@ -160,14 +166,14 @@ input {
 #grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin: 40px;
+    width: 90%;
+    margin: 40px auto;
 }
 
 #grid-container > div {
     padding-bottom: 40px;
     margin-bottom: 20px;
     margin-right: 20px;
-    padding: ;
     display: flex;
     flex-direction: column;
 }
@@ -207,7 +213,7 @@ input {
 .tile-title {
     margin-top: 50px;
     margin-bottom: 40px;
-    font-size: 3rem;
+    font-size: 50px;
     text-align: center;
 }
 .font-author {

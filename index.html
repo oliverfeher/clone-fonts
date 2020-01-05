@@ -26,7 +26,12 @@
         <div id="bar-container">
             <input type="text" class="input-sizing" placeholder="Search..">
             <input type="text" id="custom-text" class="input-sizing" placeholder="Custom text.." onkeyup="showMsg()">
-            <input type="number" min="10" max="30" step="5" value="10">
+            <select id="font-size-selector" onchange="showValue()">
+                <option>40px</option>
+                <option selected>50px</option>
+                <option>60px</option>
+                <option>70px</option>
+            </select>
             <label class="switch">
                 <input id="day-night" type="checkbox">
                 <span class="slider round"></span>

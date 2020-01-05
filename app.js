@@ -13,6 +13,7 @@ let tileBorderArr = Array.from(tileBorder);
 let titleArr = document.getElementsByClassName("tile-title");
 let tileArr = Array.from(titleArr);
 
+
 /*Dark Mode Function*/
 darkLight.onclick = function() {
     element.classList.toggle("dark-mode");
@@ -24,7 +25,7 @@ darkLight.onclick = function() {
     } else {
        reset.src = 'images/rotating-arrows-circle.svg';
      }
-
+    
     let img2 = layout.src;
     if (img2.indexOf('images/grid.svg')!=-1) {
         layout.src  = 'images/grid2.svg';
@@ -81,5 +82,30 @@ layout.onclick = function() {
         }
     }
 }
+
+/* Font size selector*/
+let fontSize = document.getElementById("font-size-selector");
+let tileText = document.getElementsByClassName("tile-title");
+let tileTextArr = Array.from(tileText);
+
+const showValue = () => {
+    if(fontSize.options[fontSize.selectedIndex].value === "70px") {
+        for(let i = 0; i < tileTextArr.length; i++) {
+            tileTextArr[i].style.fontSize = "70px";
+        }
+    } else if(fontSize[fontSize.selectedIndex].value === "60px") {
+        for(let i = 0; i < tileTextArr.length; i++) {
+            tileTextArr[i].style.fontSize = "60px";
+        }
+    }  else if(fontSize[fontSize.selectedIndex].value === "50px") {
+        for(let i = 0; i < tileTextArr.length; i++) {
+            tileTextArr[i].style.fontSize = "50px";
+        }
+    }  else if(fontSize[fontSize.selectedIndex].value = "40px") {
+        for(let i = 0; i < tileTextArr.length; i++) {
+            tileTextArr[i].style.fontSize = "40px";
+        }
+    }
+};
 
 
