@@ -13,7 +13,7 @@ let tileBorderArr = Array.from(tileBorder);
 let titleArr = document.getElementsByClassName("tile-title");
 let tileArr = Array.from(titleArr);
 
-
+/*Dark Mode Function*/
 darkLight.onclick = function() {
     element.classList.toggle("dark-mode");
     footerBorder.classList.toggle("footer-border");
@@ -40,14 +40,14 @@ darkLight.onclick = function() {
 
 
 
-
+/* TextBar Function*/
 function showMsg() {
     let customText = customTextBar.value;
     for(let i = 0; i < titleArr.length; i++) {
         titleArr[i].innerHTML = customText;
     }
 }
-
+/* Reset button Function*/
 reset.onclick = function() {
     let defaultText = "Default text..";
     customTextBar.value = defaultText;
@@ -59,30 +59,26 @@ reset.onclick = function() {
     
 }
 
-
-
-
-
-/* Add-button change src 
-var img3 = addIcon.src;
-    if (img3.indexOf('add-button.svg')!=-1) {
-        for(i = 0; i < addIcon.legth; i++) {
-            img3[i] = "images/add-button2.svg"
-        }
-    } else {
-        for(i = 0; i < addIcon.legth; i++) {
-            img3[i] = "images/add-button.svg"
-        }
-     }
-*/
-
+/* Layout button function*/
 
 layout.onclick = function() {
-    var img = layout.src;
+    let img = layout.src;
+    let gridContainer = document.getElementById("grid-container");
     if(img.indexOf("images/grid.svg")!=-1) {
         layout.src = "images/rows.svg";
+        gridContainer.style.gridTemplateColumns = "auto";
+        gridContainer.style.width = "70%";
+        for(let i = 0; i < tileBorderArr.length; i++) {
+            tileBorderArr[i].style.marginRight = "0px"
+        }
+        
     } else {
         layout.src = "images/grid.svg";
+        gridContainer.style.gridTemplateColumns = "auto auto auto auto";
+        gridContainer.style.width = "90%";
+        for(let i = 0; i < tileBorderArr.length; i++) {
+            tileBorderArr[i].style.marginRight = "20px"
+        }
     }
 }
 
